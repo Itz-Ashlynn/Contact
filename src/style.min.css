@@ -1,1 +1,232 @@
-@import url(https://fonts.googleapis.com/icon?family=Material+Icons);@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap);.contact-form-cf .box{position:fixed;z-index:999;width:56px;height:56px;right:20px;bottom:20px;display:none;box-sizing:border-box;line-height:1.4;text-align:left}.contact-form-cf .box *,.contact-form-cf .box ::after,.contact-form-cf .box ::before{box-sizing:border-box}.contact-form-cf .button{position:relative;border:none;width:56px;height:56px;cursor:pointer;outline:0!important;border-radius:50%;color:#fff;background:linear-gradient(135deg,#6a11cb,#2575fc);box-shadow:0 8px 20px rgba(0,0,0,0.2);transition:all .3s ease-in-out;text-align:center;font-size:18px}.contact-form-cf .button:hover{box-shadow:0 5px 15px rgba(106,17,203,0.5);transform:scale(1.05)}.contact-form-cf .button span{position:absolute;width:56px;height:56px;display:block;left:0;top:0;transition:all .2s ease-in-out}.contact-form-cf .button i{line-height:56px;font-size:20px}.contact-form-cf .icon{opacity:0;transform:scale(0)}.contact-form-cf .box.showing .m-cf-icon-default{opacity:0;transform:scale(0)}.contact-form-cf .box.showing .icon{opacity:1;transform:scale(1)}.contact-form-cf .panel{font-family:Poppins,sans-serif;transform:scale(.7);opacity:0;display:none;position:absolute;padding:20px;width:320px;background:#fff;border-radius:10px;box-shadow:0 10px 30px rgba(0,0,0,0.15);transition:all .3s ease-in-out}.contact-form-cf .panel p{color:#333;font-size:14px}.contact-form-cf .right-button .panel{bottom:70px;right:0;transform-origin:bottom right}.contact-form-cf .box.showing-state .panel{display:block}.contact-form-cf .box.showing-state.showing .panel{opacity:1;transform:scale(1)}.contact-form-cf .title{color:#222;margin:0;font-size:22px;font-weight:600;font-family:Poppins,sans-serif;margin-bottom:15px}.contact-form-cf div.element{padding-top:8px}.contact-form-cf .element,.contact-form-cf .form-button{display:block;width:100%;height:44px;background:#f3f4f6;border:solid 2px #cbd5e1;border-radius:6px;outline:0;margin-bottom:12px;padding:8px 12px;font-family:inherit;font-size:14px;transition:all .2s ease-in-out}.contact-form-cf .error{border:solid 2px #e63946}.contact-form-cf input.element:focus,.contact-form-cf textarea.element:focus{background:#fff;border-color:#6366f1;box-shadow:0 0 6px rgba(99,102,241,0.4)}.contact-form-cf .element:hover{border-color:#6366f1}.contact-form-cf textarea.element{min-height:90px;resize:none}.contact-form-cf .form-button{color:#fff;font-weight:600;border-color:transparent!important;cursor:pointer;margin-bottom:0;text-align:center;line-height:38px;text-decoration:none;background:linear-gradient(135deg,#ff7eb3,#ff758c);transition:all .3s ease-in-out}.contact-form-cf .form-button:hover{background:linear-gradient(135deg,#ff758c,#ff7eb3);box-shadow:0 4px 10px rgba(255,117,140,0.3);transform:scale(1.05)}.contact-form-cf .element:last-child{margin-bottom:0}.contact-form-cf .m-message-box{width:100%;text-align:center;margin-top:10px}.contact-form-cf .color{background:linear-gradient(135deg,#ff758c,#ff7eb3);color:#fff!important}.contact-form-cf .onclick{background:linear-gradient(135deg,#6366f1,#4754fc);color:#fff!important}.contact-form-cf .cfpromo{text-align:center;font-size:7px;margin-top:0;padding:0;color:#6c757d}
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+.contact-form-cf .box {
+ position: fixed;
+ z-index: 999;
+ width: 56px;
+ height: 56px;
+ right: 20px;
+ bottom: 20px;
+ display: none;
+ box-sizing: border-box;
+ line-height: 1.4;
+ text-align: left;
+}
+
+.contact-form-cf .box *,
+.contact-form-cf .box *::after,
+.contact-form-cf .box *::before {
+ box-sizing: border-box;
+}
+
+/* FAB (Floating Action Button) - Dark Blue Theme */
+.contact-form-cf .button {
+ position: relative;
+ border: none;
+ width: 56px;
+ height: 56px;
+ cursor: pointer;
+ outline: 0 !important;
+ border-radius: 50%;
+ background: linear-gradient(135deg, #0a1929, #1e3a5f);
+ color: #64b5f6;
+ box-shadow: 0 8px 20px rgba(10, 25, 41, 0.6);
+ transition: all 0.3s ease-in-out;
+ text-align: center;
+ font-size: 18px;
+}
+
+.contact-form-cf .button:hover {
+ box-shadow: 0 8px 25px rgba(100, 181, 246, 0.4);
+ transform: scale(1.05);
+ background: linear-gradient(135deg, #1e3a5f, #0a1929);
+}
+
+.contact-form-cf .button span {
+ position: absolute;
+ width: 56px;
+ height: 56px;
+ display: block;
+ left: 0;
+ top: 0;
+ transition: all 0.2s ease-in-out;
+}
+
+.contact-form-cf .button i {
+ line-height: 56px;
+ font-size: 20px;
+}
+
+.contact-form-cf .icon {
+ opacity: 0;
+ transform: scale(0);
+}
+
+/* Show Icons when expanded */
+.contact-form-cf .box.showing .m-cf-icon-default {
+ opacity: 0;
+ transform: scale(0);
+}
+
+.contact-form-cf .box.showing .icon {
+ opacity: 1;
+ transform: scale(1);
+}
+
+/* Contact Form Panel - AMOLED Dark Theme */
+.contact-form-cf .panel {
+ font-family: "Poppins", sans-serif;
+ transform: scale(0.7);
+ opacity: 0;
+ display: none;
+ position: absolute;
+ padding: 20px;
+ width: 320px;
+ background: #000000;
+ border: 1px solid #1e3a5f;
+ border-radius: 12px;
+ box-shadow: 0 10px 40px rgba(100, 181, 246, 0.15);
+ transition: all 0.3s ease-in-out;
+}
+
+.contact-form-cf .panel p {
+ color: #b0bec5;
+ font-size: 14px;
+ line-height: 1.6;
+}
+
+/* Position Adjustments */
+.contact-form-cf .right-button .panel {
+ bottom: 70px;
+ right: 0;
+ transform-origin: bottom right;
+}
+
+.contact-form-cf .box.showing-state .panel {
+ display: block;
+}
+
+.contact-form-cf .box.showing-state.showing .panel {
+ opacity: 1;
+ transform: scale(1);
+}
+
+/* Title Styling - High Contrast */
+.contact-form-cf .title {
+ color: #ffffff;
+ margin: 0;
+ font-size: 22px;
+ font-weight: 600;
+ font-family: "Poppins", sans-serif;
+ margin-bottom: 15px;
+}
+
+/* Input Fields - Dark Theme */
+.contact-form-cf div.element {
+ padding-top: 8px;
+}
+
+.contact-form-cf .element,
+.contact-form-cf .form-button {
+ display: block;
+ width: 100%;
+ height: 44px;
+ background: #0d1b2a;
+ border: solid 2px #1e3a5f;
+ border-radius: 8px;
+ outline: 0;
+ margin-bottom: 12px;
+ padding: 8px 12px;
+ font-family: inherit;
+ font-size: 14px;
+ color: #e0e0e0;
+ transition: all 0.2s ease-in-out;
+}
+
+.contact-form-cf .element::placeholder {
+ color: #78909c;
+ opacity: 1;
+}
+
+.contact-form-cf .error {
+ border: solid 2px #ef5350;
+ background: #1a0b0b;
+}
+
+/* Focus & Hover Effects - Blue Accent */
+.contact-form-cf input.element:focus,
+.contact-form-cf textarea.element:focus {
+ background: #0a1929;
+ border-color: #42a5f5;
+ box-shadow: 0 0 10px rgba(66, 165, 245, 0.3);
+ color: #ffffff;
+}
+
+.contact-form-cf .element:hover {
+ border-color: #2979ff;
+ background: #0a1929;
+}
+
+/* Textarea Styling */
+.contact-form-cf textarea.element {
+ min-height: 90px;
+ resize: none;
+}
+
+/* Form Button - Professional Dark Blue */
+.contact-form-cf .form-button {
+ color: #ffffff;
+ font-weight: 600;
+ border-color: transparent !important;
+ cursor: pointer;
+ margin-bottom: 0;
+ text-align: center;
+ line-height: 38px;
+ text-decoration: none;
+ background: linear-gradient(135deg, #0d47a1, #1565c0);
+ transition: all 0.3s ease-in-out;
+ box-shadow: 0 4px 12px rgba(13, 71, 161, 0.4);
+}
+
+.contact-form-cf .form-button:hover {
+ background: linear-gradient(135deg, #1565c0, #1976d2);
+ box-shadow: 0 6px 20px rgba(25, 118, 210, 0.5);
+ transform: scale(1.03);
+}
+
+.contact-form-cf .form-button:active {
+ transform: scale(0.98);
+}
+
+/* Last Input Margin Fix */
+.contact-form-cf .element:last-child {
+ margin-bottom: 0;
+}
+
+/* Message Box */
+.contact-form-cf .m-message-box {
+ width: 100%;
+ text-align: center;
+ margin-top: 10px;
+}
+
+/* Color Theme Updates - Dark Blue Professional */
+.contact-form-cf .color {
+ background: linear-gradient(135deg, #0d47a1, #1565c0);
+ color: #ffffff !important;
+}
+
+.contact-form-cf .onclick {
+ background: linear-gradient(135deg, #1e3a5f, #2979ff);
+ color: #ffffff !important;
+}
+
+/* Small Promo Text - Better Visibility */
+.contact-form-cf .cfpromo {
+ text-align: center;
+ font-size: 7px;
+ margin-top: 8px;
+ padding: 0;
+ color: #546e7a;
+}

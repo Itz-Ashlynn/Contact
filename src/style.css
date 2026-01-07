@@ -20,7 +20,7 @@
   box-sizing: border-box;
 }
 
-/* FAB (Floating Action Button) */
+/* FAB (Floating Action Button) - Dark Blue Theme */
 .contact-form-cf .button {
   position: relative;
   border: none;
@@ -29,17 +29,18 @@
   cursor: pointer;
   outline: 0 !important;
   border-radius: 50%;
-  background: linear-gradient(135deg, #6a11cb, #2575fc);
-  color: #fff;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(135deg, #0a1929, #1e3a5f);
+  color: #64b5f6;
+  box-shadow: 0 8px 20px rgba(10, 25, 41, 0.6);
   transition: all 0.3s ease-in-out;
   text-align: center;
   font-size: 18px;
 }
 
 .contact-form-cf .button:hover {
-  box-shadow: 0 5px 15px rgba(106, 17, 203, 0.5);
+  box-shadow: 0 8px 25px rgba(100, 181, 246, 0.4);
   transform: scale(1.05);
+  background: linear-gradient(135deg, #1e3a5f, #0a1929);
 }
 
 .contact-form-cf .button span {
@@ -73,7 +74,7 @@
   transform: scale(1);
 }
 
-/* Contact Form Panel */
+/* Contact Form Panel - AMOLED Dark Theme */
 .contact-form-cf .panel {
   font-family: "Poppins", sans-serif;
   transform: scale(0.7);
@@ -82,15 +83,17 @@
   position: absolute;
   padding: 20px;
   width: 320px;
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  background: #000000;
+  border: 1px solid #1e3a5f;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(100, 181, 246, 0.15);
   transition: all 0.3s ease-in-out;
 }
 
 .contact-form-cf .panel p {
-  color: #333;
+  color: #b0bec5;
   font-size: 14px;
+  line-height: 1.6;
 }
 
 /* Position Adjustments */
@@ -109,9 +112,9 @@
   transform: scale(1);
 }
 
-/* Title Styling */
+/* Title Styling - High Contrast */
 .contact-form-cf .title {
-  color: #222;
+  color: #ffffff;
   margin: 0;
   font-size: 22px;
   font-weight: 600;
@@ -119,7 +122,7 @@
   margin-bottom: 15px;
 }
 
-/* Input Fields */
+/* Input Fields - Dark Theme */
 .contact-form-cf div.element {
   padding-top: 8px;
 }
@@ -129,31 +132,40 @@
   display: block;
   width: 100%;
   height: 44px;
-  background: #f3f4f6;
-  border: solid 2px #cbd5e1;
-  border-radius: 6px;
+  background: #0d1b2a;
+  border: solid 2px #1e3a5f;
+  border-radius: 8px;
   outline: 0;
   margin-bottom: 12px;
   padding: 8px 12px;
   font-family: inherit;
   font-size: 14px;
+  color: #e0e0e0;
   transition: all 0.2s ease-in-out;
 }
 
-.contact-form-cf .error {
-  border: solid 2px #e63946;
+.contact-form-cf .element::placeholder {
+  color: #78909c;
+  opacity: 1;
 }
 
-/* Focus & Hover Effects */
+.contact-form-cf .error {
+  border: solid 2px #ef5350;
+  background: #1a0b0b;
+}
+
+/* Focus & Hover Effects - Blue Accent */
 .contact-form-cf input.element:focus,
 .contact-form-cf textarea.element:focus {
-  background: #fff;
-  border-color: #6366f1;
-  box-shadow: 0 0 6px rgba(99, 102, 241, 0.4);
+  background: #0a1929;
+  border-color: #42a5f5;
+  box-shadow: 0 0 10px rgba(66, 165, 245, 0.3);
+  color: #ffffff;
 }
 
 .contact-form-cf .element:hover {
-  border-color: #6366f1;
+  border-color: #2979ff;
+  background: #0a1929;
 }
 
 /* Textarea Styling */
@@ -162,9 +174,9 @@
   resize: none;
 }
 
-/* Form Button */
+/* Form Button - Professional Dark Blue */
 .contact-form-cf .form-button {
-  color: #fff;
+  color: #ffffff;
   font-weight: 600;
   border-color: transparent !important;
   cursor: pointer;
@@ -172,14 +184,19 @@
   text-align: center;
   line-height: 38px;
   text-decoration: none;
-  background: linear-gradient(135deg, #ff7eb3, #ff758c);
+  background: linear-gradient(135deg, #0d47a1, #1565c0);
   transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 12px rgba(13, 71, 161, 0.4);
 }
 
 .contact-form-cf .form-button:hover {
-  background: linear-gradient(135deg, #ff758c, #ff7eb3);
-  box-shadow: 0 4px 10px rgba(255, 117, 140, 0.3);
-  transform: scale(1.05);
+  background: linear-gradient(135deg, #1565c0, #1976d2);
+  box-shadow: 0 6px 20px rgba(25, 118, 210, 0.5);
+  transform: scale(1.03);
+}
+
+.contact-form-cf .form-button:active {
+  transform: scale(0.98);
 }
 
 /* Last Input Margin Fix */
@@ -194,22 +211,22 @@
   margin-top: 10px;
 }
 
-/* Color Theme Updates */
+/* Color Theme Updates - Dark Blue Professional */
 .contact-form-cf .color {
-  background: linear-gradient(135deg, #ff758c, #ff7eb3);
-  color: #fff !important;
+  background: linear-gradient(135deg, #0d47a1, #1565c0);
+  color: #ffffff !important;
 }
 
 .contact-form-cf .onclick {
-  background: linear-gradient(135deg, #6366f1, #4754fc);
-  color: #fff !important;
+  background: linear-gradient(135deg, #1e3a5f, #2979ff);
+  color: #ffffff !important;
 }
 
-/* Small Promo Text */
+/* Small Promo Text - Better Visibility */
 .contact-form-cf .cfpromo {
   text-align: center;
   font-size: 7px;
-  margin-top: 0;
+  margin-top: 8px;
   padding: 0;
-  color: #6c757d;
+  color: #546e7a;
 }
